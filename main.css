@@ -205,6 +205,8 @@ table.swlist td.swlinks {
 
 td.swlinks a {
 	margin: 0.25em;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
     border-radius: 1em;
     background-color: #2A86EF;
     color: white;
@@ -466,4 +468,23 @@ div.zoomed p {
     display: inline-block;
     margin: auto;
     margin-top: 1em;
+}
+
+
+
+div.subhead {
+    font-size: 85%;
+    margin-top: -1em;
+    margin-bottom: 2em;
+}
+
+div.subhead a {
+	margin: 0.25em;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+    background-color: #888;
+    color: white;
+    font-size: 90%;
+    padding: 0.15em 0.5em;
 }
