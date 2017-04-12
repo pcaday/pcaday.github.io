@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<!DOCTYPE ipestyle SYSTEM "ipe.dtd">
+<ipestyle name="websitecolors">
+<color name="websiteblue" value="0.140625 0.484375 0.8"/>
+</ipestyle>

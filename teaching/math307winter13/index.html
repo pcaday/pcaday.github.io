@@ -1,0 +1,775 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="generator" content=
+    "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+    <title>
+      Math 307F - Winter 2013
+    </title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head><!-- Ideas from the webpages of Dr. Taggart
+      and Mauricio Duarte -->
+  <body>
+    <div class="title">
+      <a href="index.html" class="titlelink">Math 307F &mdash; Winter 2013</a>
+      <ul class="toplinks">
+        <li class="toplinks">
+          <a href="index.html" class="toplinks">Main Page</a>
+        </li>
+        <li class="toplinks">
+          <a href="hw.html" class="toplinks">Homework</a>
+        </li>
+        <li class="toplinks">
+          <a href="lessons.html" class="toplinks">Class Summaries</a>
+        </li>
+        <li class="toplinks">
+          <a href="https://catalyst.uw.edu/gradebook/pcaday/72666" class=
+          "toplinks" target="_blank">Gradebook</a>
+        </li>
+      </ul>
+    </div>
+    <div class="sidebar">
+      <!-- Info box -->
+      <div class="sidebarbox">
+        <span class="sbtitle">Quick Facts</span>
+        <hr />
+        <span class="sbentry">Time: MWF 12:30&ndash;1:20</span> <span class=
+        "sbentry">Location: <a href="http://www.washington.edu/maps/?CDH"
+        target="_blank">Condon 115</a></span> <span class="sbentry">Instructor:
+        Peter Caday</span>
+        <ul class="sbindentitalic">
+          <li>pcaday (at uw.edu)
+          </li>
+          <!--    <li>Office: <a href="http://www.washington.edu/maps/?PDL" target="_blank">Padelford</a> C-34</li> -->
+        </ul>
+      </div><!-- Office hours box -->
+      <div class="sidebarbox">
+        <span class="sbtitle">Math 307 Shared Office Hours</span>
+        <hr />
+        <table class="oh">
+          <tr>
+            <td class="oh-day">
+              M
+            </td>
+            <td class="oh-from">
+              11:30
+            </td>
+            <td class="oh-dash">
+              &ndash;
+            </td>
+            <td class="oh-to">
+              1:30
+            </td>
+            <td class="oh-who">
+              Austin R.
+            </td>
+          </tr>
+          <tr>
+            <td class="oh-day"></td>
+            <td class="oh-from">
+              3:30
+            </td>
+            <td class="oh-dash">
+              &ndash;
+            </td>
+            <td class="oh-to">
+              4:30
+            </td>
+            <td class="oh-who">
+              Peter C.
+            </td>
+          </tr>
+          <tr>
+            <td class="oh-day"></td>
+            <td class="oh-from">
+              5:00
+            </td>
+            <td class="oh-dash">
+              &ndash;
+            </td>
+            <td class="oh-to">
+              6:00
+            </td>
+            <td class="oh-who">
+              Louis F.
+            </td>
+          </tr>
+          <tr>
+            <td class="oh-day">
+              T
+            </td>
+            <td class="oh-from">
+              1:00
+            </td>
+            <td class="oh-dash">
+              &ndash;
+            </td>
+            <td class="oh-to">
+              3:00
+            </td>
+            <td class="oh-who">
+              Mary R.
+            </td>
+          </tr>
+          <tr>
+            <td class="oh-day"></td>
+            <td class="oh-from">
+              3:30
+            </td>
+            <td class="oh-dash">
+              &ndash;
+            </td>
+            <td class="oh-to">
+              5:30
+            </td>
+            <td class="oh-who">
+              Lindsay E.
+            </td>
+          </tr>
+          <tr>
+            <td class="oh-day">
+              W
+            </td>
+            <td class="oh-from">
+              11:30
+            </td>
+            <td class="oh-dash">
+              &ndash;
+            </td>
+            <td class="oh-to">
+              12:30
+            </td>
+            <td class="oh-who">
+              Austin R.
+            </td>
+          </tr><!--    <tr>
+                <td class="oh-day"></td>
+                <td class="oh-from"><strike>3:00</strike></td>
+                <td class="oh-dash">&ndash;</td>
+                <td class="oh-to"><strike>4:00</strike></td>
+                <td class="oh-who"><strike>Christian R.</strike></td>
+        </tr>           -->
+          <tr>
+            <td class="oh-day">
+              Th
+            </td>
+            <td class="oh-from">
+              11:30
+            </td>
+            <td class="oh-dash">
+              &ndash;
+            </td>
+            <td class="oh-to">
+              12:30
+            </td>
+            <td class="oh-who">
+              Huy T.
+            </td>
+          </tr>
+          <tr>
+            <td class="oh-day"></td>
+            <td class="oh-from">
+              12:30
+            </td>
+            <td class="oh-dash">
+              &ndash;
+            </td>
+            <td class="oh-to">
+              2:30
+            </td>
+            <td class="oh-who">
+              Christian R.
+            </td>
+          </tr>
+          <tr>
+            <td class="oh-day">
+              F
+            </td>
+            <td class="oh-from">
+              10:30
+            </td>
+            <td class="oh-dash">
+              &ndash;
+            </td>
+            <td class="oh-to">
+              11:30
+            </td>
+            <td class="oh-who">
+              Peter C.
+            </td>
+          </tr>
+          <tr>
+            <td class="oh-day"></td>
+            <td class="oh-from">
+              11:30
+            </td>
+            <td class="oh-dash">
+              &ndash;
+            </td>
+            <td class="oh-to">
+              12:30
+            </td>
+            <td class="oh-who">
+              Huy T.
+            </td>
+          </tr>
+        </table><!--    <span class="sbentry">M, 3:30&ndash;4:30</span>
+        <span class="sbentry">F, 10:30&ndash;11:30</span> -->
+        <div class="sbspacer"></div><span class="sbentry"><i>Location:</i> The
+        conference room of the <a href="http://www.math.washington.edu/~msc"
+        target="_blank">Math Study Center</a>, <a href=
+        "http://www.washington.edu/maps/?CMU" target=
+        "_blank">Communications</a> B-014. Click <a href="oh.html">here</a> for
+        more info.</span>
+      </div><!-- Links box -->
+      <div class="sidebarbox">
+        <span class="sbtitle">Links</span>
+        <hr />
+        <a href="handouts/syllabus.pdf" target="_blank" class=
+        "linklist">Syllabus</a> <a href="http://depts.washington.edu/clue/"
+        class="linklist">CLUE (Tutoring)</a> <a href=
+        "http://alamos.math.arizona.edu/ODEApplet/JOdeApplet.html" class=
+        "linklist">Direction Field Applet</a>
+      </div>
+    </div>
+    <div class="mainpanel">
+      <!-- Use a table to line up the dates -->
+      <table>
+        <tr>
+          <td class="chead">
+            <span class="date">3/20</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Practice Final and Final
+            Policies</span>
+            <p>
+              Here's a link to the <a href="handouts/finalpractice-v1.pdf"
+              target="_blank">practice final</a> from today's review session.
+            </p>
+            <p>
+              Just as for the midterms, you can have a double-sided sheet of
+              handwritten notes for the final, but no calculators will be
+              allowed. I'll make sure to make the numbers work out so that
+              calculators won't be needed, and you can include square roots and
+              trigonometric functions in your answers.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">3/6</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Midterm 2 and Solutions</span>
+            <p>
+              Here are the links to <a href="exams/midterm2.pdf" target=
+              "_blank">midterm 2</a>, and the <a href=
+              "solutions/midterm2solutions.pdf" target="_blank">solutions</a>.
+            </p>
+          </td>
+        </tr><!--
+        <tr>
+          <td class="chead">
+            <span class="date">3/6</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Cover-up Method Correction</span>
+            <p>
+              One student noticed that the rule I gave for finding the constants for an irreducible quadratic factor is completely wrong. Here's the correct version. Suppose you have an irreducible quadratic factor in your partial fraction expansion:
+
+To find A and B you'll cover up ((s-a)<sup>2</sup> + b<sup>2</sup>) in the denominator like usual, and plug in s = a + bi. The result will be another complex number, say c + di. Then you can find A and B from c and d as follows: A is d/sqrt(b), while B = c.
+          </td>
+        </tr> -->
+        <tr>
+          <td class="chead">
+            <span class="date">2/25</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Midterm 2 Topics, Practice
+            Problems</span>
+            <p>
+              Here are links to the <a href="handouts/midterm2topics.pdf"
+              target="_blank">list of topics</a> for midterm 2 and the packet
+              of <a href="handouts/midterm2practice.pdf" target=
+              "_blank">practice problems</a> we covered in today's review
+              session.
+            </p>
+            <p>
+              <i>Update:</i> here are the <a href=
+              "handouts/midterm2practicesolutions.pdf">solutions</a> for the
+              practice problems.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">2/22</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Midterm 2 Review Session</span>
+            <p>
+              In preparation for the second midterm (which is next Wednesday,
+              February 27), we'll have a review session, like we did for the
+              first midterm. We'll meet <b>Monday 4:30 &ndash; 6:00</b>,
+              location TBD.
+            </p>
+            <p>
+              Let me know if there's a particular topic you'd like to have more
+              review on, or if you have suggestions on the format of the
+              session. I'm thinking of doing either a Q &amp; A style session,
+              or handing out a practice midterm for everyone to work on
+              individually (like last time). Send me an email if you have an
+              opinion!
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">2/22</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Second Order Linear ODE Applets</span>
+            <p>
+              Another one of the 307 instructors, Gautam Sisodia, wrote several
+              applets which graph the solutions of homogeneous and
+              nonhomogeneous second-order constant coefficient linear ODEs.
+            </p>
+            <p>
+              These applets allow you to change the coefficients of the
+              equations and see visually how it affects the solution. In the
+              nonhomogeneous applet, the external force is a trig function
+              (like we've considered in class). I'd highly recommend taking a
+              look at them. Here are the links:
+            </p>
+            <ul class="invisible">
+              <li>
+                <a href=
+                "http://www.math.washington.edu/~gautas/SLHCCjs/">Homogeneous
+                Applet</a>
+              </li>
+              <li>
+                <a href=
+                "http://www.math.washington.edu/~gautas/SLNHCCjs/">Nonhomogeneous
+                Applet</a>
+              </li>
+            </ul>
+            <p>
+              In both applets, the sliders at the bottom control the
+              parameters. Watch the equation to see which sliders control which
+              parameters, and then see how that affects the solution.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">2/20</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Office Hours Change</span>
+            <p>
+              I'm sorry for moving office hours again, but it turns out I'm
+              going to have to move the office hours scheduled for Tuesday to
+              this morning, 10:30-11:30.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">2/19</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Handout on Unforced Vibrations</span>
+            <p>
+              In class Friday we started to cover unforced vibrations in a
+              system with a mass hanging from a spring. I could have done a
+              better job of explaining, so <a href=
+              "handouts/unforcedoscillations.pdf" target="_blank">here's a
+              handout</a> on it. On Friday, we just covered the situation where
+              there is no damping; the handout also mentions the damped case,
+              which we'll talk more about in class this Wednesday.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">2/17</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Office Hours Tuesday, HW 4
+            Changes</span>
+            <p>
+              Since Monday is a holiday, I'll be moving Monday's office hours
+              to Tuesday, 3:30-4:30.
+            </p>
+            <p>
+              I've gotten a few questions on the additional problems. There's
+              been a couple issues on the assignment and most importantly I
+              wasn't able to cover the topics of quasi-periods and
+              quasi-frequency last Friday as I was hoping. As a result, it will
+              not be due with this week's homework; I'll put it on next week's
+              homework (which will be due Monday, February 25). I also removed
+              one of the ungraded problems (3.7 #18)
+            </p>
+            <p>
+              The other issue is that it was pointed out that the second
+              pendulum in problem 1 is overdamped. When I post homework 5, I'll
+              include a corrected version of the problem.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">2/5</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Complex Numbers Worksheet</span>
+            <p>
+              Tomorrow in class, we'll be discussing complex roots of the
+              characteristic equation. Here's the <a href=
+              "https://catalyst.uw.edu/webq/survey/pcaday/191529">link</a>
+              again to the worksheet on complex numbers I emailed to the class
+              earlier (which includes links to several handouts).
+            </p>
+            <p>
+              The worksheet is worth half a quiz grade, and it's due this
+              Friday, February 8. If you finish it by class on Wednesday,
+              however, it should help you to understand Wednesday's lecture
+              better.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">1/30</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Second Practice Midterm</span>
+            <p>
+              Here's the <a href="handouts/midterm1practice.pdf">practice
+              midterm</a> we did in Monday's review session and <a href=
+              "handouts/midterm1practiceSolutions.pdf">solutions</a>. I emailed
+              these out earlier, but I wanted to post them here for future
+              reference, too.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">1/28</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Euler's Method Applet</span>
+            <p>
+              Here the link to the <a href=
+              "http://math.mit.edu/daimp/EulerMethod.html">applet demonstrating
+              Euler's method</a> I will show in class today.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">1/28</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Practice Midterm Solutions</span>
+            <p>
+              Here are <a href=
+              "http://staff.washington.edu/grigg/math307/wi11/exams/midterm1-ans.pdf">
+              solutions</a> to Nathan Grigg's midterm 1 from Winter 2011.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">1/27</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Midterm Review Session</span>
+            <p>
+              It's already time for the first midterm: this Wednesday,
+              12:30-1:20. Based on the emails I've received, it looks like
+              having a review session Monday afternoon/evening works the best
+              for the most people.
+            </p>
+            <p>
+              We'll meet <b>Monday 4:30 &ndash; 6:00</b> in the math lounge
+              (<b>Padelford C-130</b>). Padelford can be confusing to navigate,
+              so here's a <a href="handouts/MathLoungeDirections.gif">map</a>
+              to the lounge.
+            </p>
+            <p>
+              I know at least one person can't make it to a Monday review
+              session. If there's enough interest, I might be able to provide a
+              quick review session Tuesday as well.
+            </p>
+            <p>
+              Monday in class we will cover Euler's method for finding
+              approximate solutions to differential equations, and spend the
+              rest of time reviewing. Bring problems to review, or concepts
+              you'd like to re-visit.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">1/25</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Midterm 1 Topics</span>
+            <p>
+              Here's a <a href="handouts/midterm1topics.pdf">list of topics</a>
+              for the first midterm. On it, you'll find sections from the book
+              to study, and some practice problems to look at. Feel free to
+              email me if you have any questions!
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">1/25</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Practice Midterm 1</span>
+            <p>
+              Here's a <a href=
+              "http://staff.washington.edu/grigg/math307/wi11/exams/midterm1.pdf">
+              link</a> to a past 307 midterm from Nathan Grigg's Winter 2011
+              class. Although it doesn't cover all the types of problems you
+              might encounter in class, it has a lot of good practice problems.
+              I'll send out a comprehensive list of topics for the first
+              midterm soon.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">1/24</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Quiz 2 Solutions</span>
+            <p>
+              Here are <a href="solutions/quiz2solutions.pdf" target=
+              "_blank">solutions</a> to last Friday's quiz &mdash; the mixing
+              problem.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">1/24</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Note on 2.3, #6(a)</span>
+            <p>
+              Part (a) is really separate from the rest of problem 6. In part
+              (a), we're imagining that we drop an object from a height h, and
+              we want to show that the object's velocity just before it hits
+              the ground is the square root of 2gh.
+            </p>
+            <p>
+              To do that, we need a formula for the object's velocity, v(t),
+              and we also need to know the time the object hits the ground so
+              we can plug it into v(t). To find when the object hits the
+              ground, it will be handy to have the formula for the object's
+              position; let's call it y(t).
+            </p>
+            <p>
+              For motion problems like this, we start with the forces on the
+              object, which create acceleration. In our problem, the only force
+              is gravity, and it causes an acceleration of a(t) = -g.
+            </p>
+            <p>
+              Acceleration is the derivative of velocity, so to get v(t), we
+              integrate: v(t) = &int;&nbsp;a(t) = -gt + c. To find c, we use
+              the fact that the object starts with zero velocity: v(0) = 0, so
+              c = 0. Similarly, since velocity is the derivative of position,
+              we can now integrate v(t) to get y(t): y(t) = &int;&nbsp;v(t) =
+              -gt<sup>2</sup>/2 + c. Now, since the object starts at height h,
+              we get the initial condition y(0) = h, so c = h.
+            </p>
+            <p>
+              Now we have formulas for y(t) and v(t). To find when the object
+              hits the ground, we can solve for when y(t) = 0. I'll let you
+              finish it off from there.
+            </p><!-- old note -->
+            <!--
+<p>Here's a quick note on problem 6a, section 2.3: The question is asking you to show that a particle dropped from height <i>h</i> will have velocity equal to the square root of <i>2gh</i> when it reaches the ground.</p>
+
+<p>One way to solve this: start by deriving an equation for the height <i>y(t)</i> of the particle <i>t</i> seconds after it is dropped. With this equation, you can solve for the time it takes for the particle to reach the ground, and go from there.</p>
+-->
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">1/22</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Plan This Week</span>
+            <p>
+              Tomorrow in class we'll work more with autonomous equations
+              (e.g., population models, chemical reactions).
+            </p>
+            <p>
+              Then, on Friday, we'll look at Euler's method for finding
+              approximate solutions for differential equations, which is one
+              practical method for computing solutions to differential
+              equations that you can't solve exactly. If you want to jump
+              ahead, here's a <a href=
+              "http://staff.washington.edu/grigg/math307/au12/lessons/3F.html">link</a>
+              to Nathan Grigg's video on Euler's method.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">1/17</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Quiz 2 Topics</span>
+            <p>
+              I mentioned the topics for quiz 2 in class yesterday, but for
+              those of you who weren't there, here are possible topics:
+            </p>
+            <ul>
+              <li>Integrating methods: integrating factors, separation of
+              variables
+              </li>
+              <li>Applications: mixing problems (Monday) and motion problems
+              (Wednesday).
+              </li>
+            </ul>The quiz questions will be very similar to the examples we've
+            done in class &mdash; if you understand those well, you should be
+            set for the quiz. You're allowed to use a double-sided page of
+            handwritten notes.
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">1/15</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Notes on Homework 1</span>
+            <p>
+              I've had a few questions on the homework that I think could use
+              some explanation, so here are some pointers:
+            </p><b>2.1, #24(c):</b>
+            <p>
+              The key thing to describe is the limit of the solution as t goes
+              to zero, when a = 1/e. (In other words, find the value for your
+              constant, c, that corresponds to the initial condition y(1) = a =
+              1/e, and plug it into the general solution, then take the limit
+              as t tends to 0).
+            </p>
+            <p>
+              The reason a = 1/e is special is that for larger values of a, the
+              solution y(t) tends to positive infinity as t -&gt; 0, and for
+              smaller values of a, it tends to negative infinity as t -&gt; 0.
+              Part (c) is asking you to investigate what happens right when a =
+              1/e.
+            </p><b>2.2, #21:</b>
+            <p>
+              You can leave your solution in implicit form (instead of solving
+              for y, which would be a mess). As a rule, when solving separable
+              equations, the solutions you get will be in implicit form, and
+              it's OK to leave them that way, both on homework and on tests.
+              The last part of this problem, which asks for the interval where
+              the solution is defined, is a tricky point. <a href=
+              "handouts/implicitSolutionsValidIntervals.pdf" target=
+              "_blank">Here's</a> a short handout on that.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">1/11</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Office Hours</span>
+            <p>
+              I've tallied the votes for office hours&mdash; thanks to everyone
+              who put their votes in! Unfortunately, there wasn't a choice of
+              two office hours that worked for everyone, but it looks like the
+              most popular choice for office hours is:
+            </p>
+            <ul class="invisible">
+              <li>Mondays 3:30&ndash;4:30
+              </li>
+              <li>Fridays 10:30&ndash;11:30
+              </li>
+            </ul>which worked for 90% of the class. If you aren't able to come
+            either of these times, you're always welcome to meet with me
+            another time&mdash; just email me or talk to me after class.
+            Regular office hours begin next week. For now, we'll be meeting in
+            my office (Padelford C-34), although we might move if it gets too
+            crowded. Thanks!
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">1/9</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Handout on &int;
+            e<sup>x</sup>cos(x)</span>
+            <p>
+              <a href="handouts/doubleibp.pdf" target="_blank">Here's a
+              handout</a> on solving integrals like &int; e<sup>x</sup>cos(x)
+              dx. We ran across this integral in class today, and you'll need
+              to know how to solve them for the quiz Friday, too.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">1/9</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Homework 1 Posted</span>I've posted
+            <a href="hw.html">Homework 1</a>, which is due next Wednesday in
+            class. Notice that there are only five problems to hand in; the
+            rest are for your practice, to do on your own. These problems
+            involve solving <i>initial value problems</i>, which are
+            differential equations with an extra condition (or conditions) that
+            single out a particular solution. We haven't discussed these in
+            class, so for now, you can focus on solving the differential
+            equation only. We'll discuss initial value problems on Friday.
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">1/8</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Office Hours Survey</span>Here's the
+            link to a <a href=
+            "https://catalyst.uw.edu/webq/survey/pcaday/188931" target=
+            "_blank">survey</a> on office hours. On this survey you can let me
+            know what times and days would work best for you.
+            <p>
+              Make sure to complete it by Thursday evening. I plan to announce
+              the office hours in class on Friday.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">1/7</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Welcome to Math 307F!</span>
+            <p>
+              Here's a link to the <a href="handouts/syllabus.pdf" target=
+              "_blank">syllabus</a> and several <a href=
+              "handouts/practiceintegrals.pdf" target="_blank">review
+              integrals</a>. More material on the class will appear here
+              shortly.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- <img src="UW_W-Logo_smallRGB.png" alt="" style="float:right"> -->
+  </body>
+</html>

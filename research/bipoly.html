@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<link href="../main.css" rel="stylesheet" type="text/css">
+<title>Optimizing Polynomial Models of Algebraic Curves</title>
+
+<body>
+
+<div class="navbg">
+<nav>
+<ul>
+<li><span><a href=".."><img src="../graphics/home-white.svg" style="width:1em;height:1em" alt=""/> Home</a></span></li>
+<li><span><a href="index.html">Research</a></span></li>
+<li><span><a href="../software">Software</a></span></li>
+<li><span><a href="../teaching">Teaching</a></span></li>
+</ul>
+</nav>
+</div>
+
+<div class="main">
+
+<h1>Optimizing Polynomial Models of Algebraic Curves</h1>
+
+<p>
+In cryptographic applications, we are interested in elliptic curves that have a specified number of points. One way to do this involves an algebraic curve, the modular curve <i>X</i><sub>1</sub>(<i>N</i>) <sup>[1]</sup>. However, the polynomial defining <i>X</i><sub>1</sub>(<i>N</i>) may be extremely large, with tens of thousands of terms, say. Fortunately, to facilitate computations, it may be possible to find a change of coordinates that simplifies the polynomial considerably. 
+</p>
+
+<p>
+In this project, my mentor Andrew V. Sutherland and I developed a non-deterministic algorithm, using simulated annealing, which searches for simpler polynomials by repeatedly applying a small set of atomic operations. Our algorithm matched and in many cases improved on previously known results, with very reasonable runtime: for instance, simplifying a polynomial with total degree 352 and 33,618 terms (representing <i>X</i><sub>1</sub>(<i>101</i>)) required less than 3 minutes on a standard desktop.
+</p>
+
+<p>
+You can find the polynomial optimization code (in C) <a href="https://www.github.com/pcaday/bipoly" target="_blank">here</a> and a poster describing the project <a href="../pubs/polyposter.pdf" target="_blank">here</a>.
+</p>
+
+<div class="references">
+<p>[1] A. V. Sutherland, "Computing Hilbert class polynomials with the Chinese Remainder Theorem." <i>Mathematics of Computation</i> <b>80</b> (2011).</p>
+</div>
+
+<p><a href="index.html">Back to Research</a></p>
+
+
+</div>
+
+</body>
+</html>

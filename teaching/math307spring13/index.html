@@ -1,0 +1,883 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="generator" content=
+    "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+    <title>
+      Math 307B - Spring 2013
+    </title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head><!-- Ideas from the webpages of Dr. Taggart
+      and Mauricio Duarte -->
+  <body>
+    <div class="title">
+      <a href="index.html" class="titlelink">Math 307B &mdash; Spring 2013</a>
+      <ul class="toplinks">
+        <li class="toplinks">
+          <a href="index.html" class="toplinks">Main Page</a>
+        </li>
+        <li class="toplinks">
+          <a href="hw.html" class="toplinks">Homework</a>
+        </li>
+        <li class="toplinks">
+          <a href="https://catalyst.uw.edu/gopost/board/pcaday/32837" class=
+          "toplinks">Discussion Board</a>
+        </li>
+        <li class="toplinks">
+          <a href="examarchive/index.html" class="toplinks">Exam Archive</a>
+        </li>
+        <li class="toplinks">
+          <a href="https://catalyst.uw.edu/gradebook/pcaday/75636" class=
+          "toplinks">Gradebook</a>
+        </li>
+      </ul>
+    </div>
+    <div class="sidebar">
+      <!-- Info box -->
+      <div class="sidebarbox">
+        <span class="sbtitle">Quick Facts</span>
+        <hr />
+        <span class="sbentry"><i>Time:</i> MWF 9:30&ndash;10:20</span>
+        <span class="sbentry"><i>Location:</i> <a href=
+        "http://www.washington.edu/maps/?EEB">EEB 037</a></span> <span class=
+        "sbentry"><i>Instructor:</i> Peter Caday &mdash; pcaday (at
+        uw.edu)</span> <!-- <ul class="sbindent">
+          <li>pcaday (at uw.edu)
+          </li>
+        </ul> -->
+      </div><!-- Office hours box -->
+      <div class="sidebarbox">
+        <span class="sbtitle">Office Hours</span>
+        <hr />
+        <div class="sbspacer"></div><span class="sbentry"><i>This
+        week:</i></span> 
+        <!--        <span class="sbentry">(note my hours are different this week; regular hours will finally begin next week)</span>-->
+        <div class="sbspacer"></div>
+        <table class="oh">
+          <tr>
+            <td class="oh-day">
+              Mon
+            </td>
+            <td class="oh-from">
+              9:30
+            </td>
+            <td class="oh-dash">
+              &ndash;
+            </td>
+            <td class="oh-to">
+              10:20
+            </td>
+            <td class="oh-who">
+              Tvrtko Tadi&cacute;
+            </td>
+          </tr>
+          <tr>
+            <td class="oh-day"></td>
+            <td class="oh-from">
+              11:30
+            </td>
+            <td class="oh-dash">
+              &ndash;
+            </td>
+            <td class="oh-to">
+              12:20
+            </td>
+            <td class="oh-who">
+              Austin Roberts
+            </td>
+          </tr>
+          <tr>
+            <td class="oh-day"></td>
+            <td class="oh-from">
+              3:30
+            </td>
+            <td class="oh-dash">
+              &ndash;
+            </td>
+            <td class="oh-to">
+              4:30
+            </td>
+            <td class="oh-who">
+              Louis Fan <em>(new time)</em>
+            </td>
+          </tr>
+          <tr>
+            <td class="oh-day"></td>
+            <td class="oh-from">
+              4:30
+            </td>
+            <td class="oh-dash">
+              &ndash;
+            </td>
+            <td class="oh-to">
+              5:30
+            </td>
+            <td class="oh-who">
+              Peter Caday
+            </td>
+          </tr>
+          <tr>
+            <td class="oh-day">
+              Tue
+            </td>
+            <td class="oh-from">
+              9:30
+            </td>
+            <td class="oh-dash">
+              &ndash;
+            </td>
+            <td class="oh-to">
+              10:30
+            </td>
+            <td class="oh-who">
+              Riley Casper
+            </td>
+          </tr>
+          <tr>
+            <td class="oh-day"></td>
+            <td class="oh-from">
+              1:00
+            </td>
+            <td class="oh-dash">
+              &ndash;
+            </td>
+            <td class="oh-to">
+              3:00
+            </td>
+            <td class="oh-who">
+              Mary Radcliffe
+            </td>
+          </tr>
+          <tr>
+            <td class="oh-day"></td>
+            <td class="oh-from">
+              3:00
+            </td>
+            <td class="oh-dash">
+              &ndash;
+            </td>
+            <td class="oh-to">
+              5:00
+            </td>
+            <td class="oh-who">
+              Lindsay Erickson
+            </td>
+          </tr>
+          <tr>
+            <td class="oh-day">
+              Wed
+            </td>
+            <td class="oh-from">
+              10:30
+            </td>
+            <td class="oh-dash">
+              &ndash;
+            </td>
+            <td class="oh-to">
+              11:20
+            </td>
+            <td class="oh-who">
+              Austin Roberts
+            </td>
+          </tr>
+          <tr>
+            <td class="oh-day"></td>
+            <td class="oh-from">
+              11:30
+            </td>
+            <td class="oh-dash">
+              &ndash;
+            </td>
+            <td class="oh-to">
+              12:30
+            </td>
+            <td class="oh-who">
+              Peter Caday
+            </td>
+          </tr>
+          <tr>
+            <td class="oh-day"></td>
+            <td class="oh-from">
+              12:30
+            </td>
+            <td class="oh-dash">
+              &ndash;
+            </td>
+            <td class="oh-to">
+              2:30
+            </td>
+            <td class="oh-who">
+              Chris Jordan-Squire
+            </td>
+          </tr>
+          <tr>
+            <td class="oh-day">
+              Thu
+            </td>
+            <td class="ohc-from">
+              9:30
+            </td>
+            <td class="oh-dash">
+              &ndash;
+            </td>
+            <td class="ohc-to">
+              10:30
+            </td>
+            <td class="ohc-who">
+              <strike>Riley Casper</strike> (cancelled)
+            </td>
+          </tr>
+          <tr>
+            <td class="oh-day"></td>
+            <td class="oh-from">
+              12:00
+            </td>
+            <td class="oh-dash">
+              &ndash;
+            </td>
+            <td class="oh-to">
+              12:50
+            </td>
+            <td class="oh-who">
+              Tvrtko Tadi&cacute;
+            </td>
+          </tr>
+          <tr>
+            <td class="oh-day">
+              Fri
+            </td>
+            <td class="oh-from">
+              10:00
+            </td>
+            <td class="oh-dash">
+              &ndash;
+            </td>
+            <td class="oh-to">
+              11:00
+            </td>
+            <td class="oh-who">
+              Camil Aponte Rom&aacute;n
+            </td>
+          </tr>
+        </table><!--    <div class="sbspacer"></div>
+        <span class="sbentry">Please take a moment to fill out <a href="https://catalyst.uw.edu/webq/survey/pcaday/197465" target="_blank">this survey</a> to help me choose our regular office hours for the quarter</span> -->
+        <div class="sbspacer"></div>
+        <!--    <span class="sbentry">Hours in <i>italics</i> are special for this week or have been cancelled.</span> -->
+        <hr />
+        <div class="sbspacer"></div><span class=
+        "sbentry"><i>Location:</i></span>
+        <div class="sbspacer"></div><span class="sbentry">The conference room
+        of the <a href="http://www.math.washington.edu/msc/">Math Study
+        Center</a>, <a href=
+        "http://www.washington.edu/maps/?CMU">Communications</a> B-014. The
+        conference room is just inside the MSC, to the right of the front
+        desk.</span>
+        <div class="sbspacer"></div><span class="sbentry">Check <a href=
+        "https://catalyst.uw.edu/gopost/board/lae241/32836/">this website</a>
+        for changes to other instructor's office hours, and <a href=
+        "http://www.math.washington.edu/~lae241/307/office-hours.php">here</a>
+        for more information on shared office hours.</span>
+      </div><!-- Links box -->
+      <div class="sidebarbox">
+        <span class="sbtitle">Links</span>
+        <hr />
+        <!--        <a href="handouts/syllabus.pdf" target="_blank" class=
+        "linklist">Syllabus</a> --><a href="http://depts.washington.edu/clue/"
+        class="linklist">CLUE (Tutoring)</a> <a href=
+        "http://alamos.math.arizona.edu/ODEApplet/JOdeApplet.html" class=
+        "linklist">Direction Field Applet</a>
+      </div>
+      <div class="sidebarbox">
+        <span class="sbtitle">Handouts</span>
+        <hr />
+        <a href="handouts/syllabus.pdf" target="_blank" class=
+        "linklist">Syllabus</a> <a href="handouts/practiceintegrals.pdf"
+        target="_blank" class="linklist">Review Integrals</a> <a href=
+        "handouts/solutions/practiceintegrals-solutions.pdf" target="_blank"
+        class="linklist">(solutions)</a> <a href="handouts/1storderlinear.pdf"
+        target="_blank" class="linklist">Integrating Factor Examples</a>
+        <a href="handouts/1stOrderApplicationsWS.pdf" target="_blank" class=
+        "linklist">1st Order ODEs Applications Worksheet</a> <a href=
+        "handouts/solutions/answers%20-%201stOrderApplicationsWS.pdf" target=
+        "_blank" class="linklist">(answers)</a> <a href=
+        "handouts/midterm1practice.pdf" target="_blank" class=
+        "linklist">Practice Midterm 1</a> <a href=
+        "handouts/solutions/answers-midterm1practice.pdf" target="_blank"
+        class="linklist">(answers)</a> 
+        <!--        <a href="handouts/UndeterminedWS.pdf" target="_blank" class=
+        "linklist">Notes on </a> -->
+         <a href="handouts/UndeterminedWS.pdf" target="_blank" class=
+        "linklist">Undetermined Coefficients Worksheet</a> <a href=
+        "handouts/solutions/UndeterminedSolutions.pdf" target="_blank" class=
+        "linklist">(solution to 3(a))</a> <a href=
+        "handouts/unforcedoscillations.pdf" target="_blank" class=
+        "linklist">Unforced Oscillations</a>
+      </div>
+    </div>
+    <div class="mainpanel">
+      <!-- Use a table to line up the dates -->
+      <table>
+        <tr>
+          <td class="chead">
+            <span class="lessondate">5/29</span>
+          </td>
+          <td class="cbody">
+            <span class="lessontitle">Partial Fractions Handout</span>
+            <p>
+              If you didn't grab a copy of the partial fractions handout last week in class, you can find it <a href="handouts/PartialFractions.pdf">here</a>. It goes through the steps of partial fractions decompositions, and discusses how you can use the cover-up method for finding the coefficients (<i>A</i>, <i>B</i>, ...) quickly.
+            </p>
+          </td>
+        </tr>        <tr>
+          <td class="chead">
+            <!--            <span class="lessondate">   </span> -->
+          </td>
+          <td class="cbody">
+            <span class="lessontitle">Link to midterm review survey</span>
+            <p>
+              This week on Wednesday or Thursday I'm planning to hold a review
+              session for Monday's midterm. If you want to give input on what
+              times work well for you, here's a <a href=
+              "https://catalyst.uw.edu/webq/survey/pcaday/202647">survey</a>
+              where you can.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="lessondate">5/13</span>
+          </td>
+          <td class="cbody">
+            <span class="lessontitle">Lesson 17: Unforced, Undamped Systems
+            (part 2) and Driven Systems</span>
+            <p>
+              Today we finished up the example from last Friday, and then
+              started on another example with a system driven by a periodic
+              external force F(t) = cos &omega;t. We set up the equation for
+              the system and solved it.
+            </p>
+            <p>
+              Here are links to two applets written by Gautam Sisodia, another
+              307 instructor. The first allows you to see the solution for
+              unforced systems and vary the m, &gamma;, and k values and
+              initial conditions: <a href=
+              "http://www.math.washington.edu/~gautas/SLHCCjs/">link</a>.
+            </p>
+            <p>
+              The second graphs the solution for driven systems with a periodic
+              external force F(t) = G sin &omega;t: <a href=
+              "http://www.math.washington.edu/~gautas/SLNHCCjs/">link</a>. The
+              seven sliders, in order, control m, &gamma;, k, y(0), y'(0), G,
+              and &omega;.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="lessondate">5/10</span>
+          </td>
+          <td class="cbody">
+            <span class="lessontitle">Lesson 16: Unforced, Undamped
+            Systems</span>
+            <p>
+              Today we began talking about the applications of second-order
+              linear equations, and in particular the spring-mass setup, which
+              was a simple model for different kinds of real-life oscillations.
+              In this setup, a mass hangs from a spring, possibly experiencing
+              some damping force due to air resistance, and possibly
+              experiencing additional external forces from outside the system.
+            </p>
+            <p>
+              During this class, we started analyzing the motion in this setup
+              when there is no external force (unforced) and no damping
+              (undamped). We started on an example with a verbal description of
+              the system, first setting up an initial value problem then
+              solving it. Finally, we started talking about how to convert the
+              solution of the ODE into a more useful form (standard sinusoidal
+              form). The standard sinusoidal form makes it easier to answer
+              questions about the motion of the system, like how much the mass
+              moves up and down, how quickly it oscillates, and when it first
+              passes the equilibrium point. <a href=
+              "handouts/unforcedoscillations.pdf" target="_blank">This
+              handout</a> describes standard sinusoidal form and the conversion
+              process briefly.
+            </p>
+            <p>
+              The book covers these topics in section 3.7.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="lessondate">5/8</span>
+          </td>
+          <td class="cbody">
+            <span class="lessontitle">Lesson 15: Nonhomogeneous Equations and
+            Undetermined Coefficients, part 3</span>
+            <p>
+              In this class we talked about one problem that can come up with
+              the method of undetermined coefficients the way we've done it up
+              until now. As an example, we tried to solve
+            </p>
+            <p>
+              <i>y''</i> - 3<i>y'</i> + 2<i>y</i> = <i>e<sup>t</sup></i>.
+            </p>
+            <p>
+              Based on the right-hand side, the trial solution should be
+              <i>Y</i>(<i>t</i>) = <i>Ae<sup>t</sup></i>, but if we plug this
+              into the left-hand side, we get zero, not <i>e<sup>t</sup></i>.
+              The problem is that <i>Ae<sup>t</sup></i> is a solution to the
+              homogeneous equation <i>y''</i> - 3<i>y'</i> + 2<i>y</i> = 0. The
+              solution is to modify the trial solution by multiplying
+              <i>Ae<sup>t</sup></i> by <i>t</i> first.
+            </p>
+            <p>
+              The general rule is: if X is a part of the trial solution that's
+              also a solution to the homogeneous, then multiply X by <i>t</i>.
+              If the trial solution also includes terms that are powers of
+              <i>t</i> times X, they'll need to be multiplied by <i>t</i> also.
+              For instance, if the homogeneous equation has
+              <i>e<sup>t</sup></i> as a solution, and <i>Y</i>(<i>t</i>) =
+              <i>Ae<sup>t</sup></i> + <i>Bte<sup>t</sup></i> +
+              <i>Ct</i><sup>2</sup><i>e<sup>t</sup></i> + <i>D</i> , the
+              <i>A</i>, <i>B</i> and <i>C</i> terms would each have to be
+              multiplied by <i>t</i>. On the other hand, the <i>D</i> term we
+              wouldn't touch, because it isn't a solution to the homogeneous
+              equation.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="lessondate">5/6</span>
+          </td>
+          <td class="cbody">
+            <span class="lessontitle">Lesson 14: Nonhomogeneous Equations and
+            Undetermined Coefficients, part 2</span>
+            <p>
+              Today's class we recapped the process we use to find the trial
+              solution <i>Y</i>(<i>t</i>) from the nonhomogeneous part of the
+              equation. For the rest of class, we talked about how to find the
+              general solution of a nonhomogeneous equation by adding one
+              particular solution of the nonhomogeneous equation to the general
+              solution of the corresponding homogeneous equation. For instance,
+              if we're given the equation <i>y'' + 3y' + 2y = 4</i> to solve,
+              the method of undetermined coefficients says that one solution is
+              <i>Y</i>(<i>t</i>) = 2. The general solution to the corresponding
+              homogeneous equation, <i>y'' + 3y' + 2y = 0</i>, is
+              <i>y<sub>c</sub></i>(<i>t</i>) = <i>ce<sup>-t</sup></i> +
+              <i>de<sup>-2t</sup></i>. Adding these two together will give us
+              the general solution to the nonhomogeneous equation:
+            </p>
+            <p>
+              <i>y</i>(<i>t</i>) = <i>Y</i>(<i>t</i>) +
+              <i>y<sub>c</sub></i>(<i>t</i>) = <i>ce<sup>-t</sup></i> +
+              <i>de<sup>-2t</sup></i> + 2.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="lessondate">5/3</span>
+          </td>
+          <td class="cbody">
+            <span class="lessontitle">Lesson 13: Nonhomogeneous Equations and
+            Undetermined Coefficients, part 1</span>
+            <p>
+              Today we had a quiz on SLHCCs, and then began talking about
+              nonhomogeneous constant-coefficient equations, which look like
+            </p>
+            <p>
+              <i>ay''</i> + <i>by'</i> + <i>cy</i> = <i>g</i>(<i>t</i>)
+            </p>
+            <p>
+              where <i>a</i>, <i>b</i>, and <i>c</i> are constants, and
+              <i>g</i>(<i>t</i>) is a function.
+            </p>
+            <p>
+              These often come up in motion problems when there is an external
+              force applied to a system (or in circuit problems, where there is
+              an external voltage source). We began talking about one way to
+              solve these, the method of undetermined coefficients, which is an
+              educated guess-and-check method. The idea with undetermined
+              coefficients is to take the nonhomogeneous part of the equation
+              (this is <i>g</i>(<i>t</i>), the part that doesn't involve
+              <i>y</i> or its derivatives) and use it to guess what one
+              solution to the equation looks like.
+            </p>
+            <p>
+              Our textbook covers undetermined coefficients in section 3.5. If
+              you read it, you'll note the book has a different approach to
+              finding the trial solution, where you look up the appropriate
+              trial solution in a table. You're welcome to learn and use this
+              approach in your work and on exams, but make sure to make a note
+              of it if you do.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="lessondate">5/1</span>
+          </td>
+          <td class="cbody">
+            <span class="lessontitle">Lesson 12: Complex Roots</span>
+            <p>
+              Today we talked about how to solve SLHCCs when the characteristic
+              equation had roots that were complex numbers (they involve the
+              imaginary number <i>i</i>). Complex numbers enter the scene when
+              the discriminant, the number under the square root in the
+              quadratic formula, is negative. To find the general solution in
+              this case, we could still use the technique from Friday using
+              <i>y</i> = <i>e<sup>rt</sup></i>, but we have to figure out what
+              <i>e<sup>rt</sup></i> means when <i>r</i> is a complex number.
+              Here Euler's formula comes in:
+            </p>
+            <p>
+              <i>e<sup>iu</sup></i> = cos(<i>u</i>) + <i>i</i> sin(<i>u</i>)
+            </p>
+            <p>
+              Using Euler's method, and by taking special linear combinations
+              of the solutions, we found that if the roots are <i>r</i> =
+              <i>a</i> + <i>bi</i>, <i>r</i> = <i>a</i> - <i>bi</i>, then the
+              general solution can be written as <i>y</i> =
+              <i>ce<sup>at</sup></i>cos(<i>bt</i>) +
+              <i>de<sup>at</sup></i>sin(<i>bt</i>), where <i>c</i>, <i>d</i>
+              are arbitrary constants. In the book, this is covered in section
+              3.3.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="lessondate">5/1</span>
+          </td>
+          <td class="cbody">
+            <span class="lessontitle">Handouts on Complex Numbers</span>
+            <p>
+              We'll be using complex numbers in class today, and making sense
+              of e<sup>x</sup> when x is a complex number. Here are two
+              handouts on complex numbers if you'd like a refresher on how
+              complex numbers work: <a href="handouts/ComplexNumbers.pdf"
+              target="_blank">first handout</a>, <a href=
+              "handouts/ComplexExponentials.pdf" target="_blank">second
+              handout</a>.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="lessondate">4/29</span>
+          </td>
+          <td class="cbody">
+            <span class="lessontitle">Lesson 11: Repeated Roots and Reduction
+            of Order</span>
+            <p>
+              Today we talked about how to solve 2nd-order linear homogeneous
+              constant coefficient ODEs (SLHCCs for short) when the
+              characteristic equation has a repeated root. Using the method
+              from the last class (plugging in <i>y</i> = <i>e<sup>rt</sup></i>
+              and solving for <i>r</i>) we only get one solution instead of two
+              because of the repeated root (section 3.4 in the book).
+            </p>
+            <p>
+              To find a second solution we tried a new technique called
+              reduction of order, which is another substitution method. If
+              <i>y</i><sub>1</sub>(t) is some function we already know is a
+              solution to the ODE (<i>e<sup>rt</sup></i> in this case) then we
+              substitute a new variable <i>v(t)</i> for <i>y</i>, which we do
+              by plugging in <i>y</i> = <i>v(t)</i><i>y</i><sub>1</sub>(t).
+              This gives us a new second-order ODE for <i>v(t)</i> that is
+              easier to solve. Once we solve for <i>v(t)</i>, we can get a new
+              solution <i>y(t)</i> for the original ODE by multiplying
+              <i>v(t)</i> by <i>y</i><sub>1</sub>(<i>t</i>)
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="lessondate">4/26</span>
+          </td>
+          <td class="cbody">
+            <span class="lessontitle">Lesson 10: Linear Homogeneous 2nd-Order
+            ODEs, part 1</span>
+            <p>
+              Today we're starting into the second major topic of Math 307:
+              linear second-order ODEs (with constant coefficients), which is
+              chapter 3 in the textbook.
+            </p>
+            <p>
+              In this class we'll begin talking about homogeneous linear
+              second-order ODEs, how to solve them, and hopefully get to
+              initial conditions for second-order ODEs (In the textbook, this
+              is covered in section 3.1).
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="lessondate">4/22</span>
+          </td>
+          <td class="cbody">
+            <span class="lessontitle">Review Day</span>
+            <p>
+              Today in class we did some review for the midterm.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="lessondate">4/22</span>
+          </td>
+          <td class="cbody">
+            <span class="lessontitle">Review for the Midterm</span>
+            <p>
+              We'll be having review for the midterm today in office hours
+              (4:30 &ndash; 5:30, in the Math Study Center) and tomorrow, 4
+              &ndash; 6, location TBD. I'll send out the location for
+              tomorrow's review session by email, so stay tuned!
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="lessondate">4/19</span>
+          </td>
+          <td class="cbody">
+            <span class="lessontitle">Survey for Midterm 1 Review
+            Session</span>
+            <p>
+              The first midterm will be taking place on Wednesday, April 24th
+              in class. I will send out practice midterms soon, and next week
+              we will have review in class Monday, as well as a review session
+              outside of class.
+            </p>
+            <p>
+              If you're interested in coming to the review sesion, please take
+              a moment to fill out <a href=
+              "https://catalyst.uw.edu/webq/survey/pcaday/199852" target=
+              "_blank">this survey</a> on what times work best for you. Thanks!
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="lessondate">4/19</span>
+          </td>
+          <td class="cbody">
+            <span class="lessontitle">Lesson 9 &mdash; Euler's Method</span>
+            <p>
+              For many ODEs, we can't write down a formula for the solution.
+              Today we talked about Euler's method, which is an algorithm to
+              generate <i>approximate</i> solutions to an ODE when we can't
+              find the solution exactly (This is covered in section 2.7 in the
+              book).
+            </p>
+            <p>
+              Here are links to the two applets we used in class today:
+              <a href="http://math.mit.edu/daimp/EulerMethod.html" target=
+              "_blank">applet 1</a>, <a href=
+              "http://www.csun.edu/~hcmth018/EuM.html" target="_blank">applet
+              2</a>. Here's another useful applet on Euler's method: <a href=
+              "http://www.calculusapplets.com/euler.html" target=
+              "_blank">link</a>.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="lessondate">4/17</span>
+          </td>
+          <td class="cbody">
+            <span class="lessontitle">Lesson 8 &mdash; Miscellaneous</span>
+            <p>
+              Today, we found a quick formula for finding the integrating
+              factor for a linear first-order ODE. Before, we had to solve
+              another ODE (which was separable) to find the integrating factor.
+              The book talks about this in section 2.1, on page 36.
+            </p>
+            <p>
+              Then, we talked about solving Bernoulli equations, which were
+              nonlinear 1st-order equations which look like
+              <i>p(t)y'</i>&nbsp;+&nbsp;<i>q(t)y</i>&nbsp;=&nbsp;<i>g(t)y<sup>n</sup></i>.
+              To solve these, we used a substitution,
+              <i>v(t)</i>&nbsp;=&nbsp;<i>y</i><sup>1-<i>n</i></sup>. This
+              substitution transforms the Bernoulli equation into a linear ODE,
+              which we now have to solve for <i>v(t)</i>. Once we know
+              <i>v(t)</i>, we can undo the substitution to find <i>y(t)</i>.
+              The book discusses Bernoulli equations in homework problems
+              27&ndash;31 for section 2.4.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="lessondate">4/15</span>
+          </td>
+          <td class="cbody">
+            <span class="lessontitle">Lesson 7 &mdash; Autonomous Equations,
+            part 2</span>
+            <p>
+              In this class, Christian Rudnick did another example of analyzing
+              an autonomous equation like you did on Friday, and then solved
+              the logistic equation using separation of variables to check that
+              our new techniques really do work. (textbook: section 2.5 again).
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="lessondate">4/12</span>
+          </td>
+          <td class="cbody">
+            <span class="lessontitle">Lesson 6 &mdash; Autonomous Equations,
+            part 1</span>
+            <p>
+              During this class, Tvrtko Tadi&cacute; introduced
+              <i>autonomous equations</i>, differential equations where
+              <i>dy/dt</i> depends only on <i>y</i> and not on <i>t</i>. He
+              introduced how to analyze these equations and their solutions
+              without actually solving the equations (textbook: section 2.5).
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="lessondate">4/10</span>
+          </td>
+          <td class="cbody">
+            <span class="lessontitle">Lesson 5 &mdash; Applications of ODEs,
+            part 2</span>
+            <p>
+              The plan for this class is to continuing talking about
+              applications of ODEs, including another mixing problem and
+              potentially a motion problem. (In the textbook, this is covered
+              in section 2.3.)
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="lessondate">4/8</span>
+          </td>
+          <td class="cbody">
+            <span class="lessontitle">Lesson 4 &mdash; Mixing Problems</span>
+            <p>
+              We did a warm-up, reviewing the two techniques for solving
+              first-order ODEs from the first week of class (separation of
+              variables and integrating factors). Afterwards we began talking
+              about applications of 1st-order ODEs, starting with mixing
+              problems (section 2.3 in the textbook).
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="lessondate">4/5</span>
+          </td>
+          <td class="cbody">
+            <span class="lessontitle">Lesson 3 &mdash; 1st Order Linear
+            Equations</span>
+            <p>
+              On Friday the plan is to have a short quiz on integrals (focusing
+              on <i>u</i>-substitution and integration by parts, like the
+              review problems). After the quiz, we can go on to solving
+              1st-order linear equations and a new technique (integrating
+              factors) which we can use to solve them.
+            </p>
+            <p>
+              Here are some <a href="handouts/1storderlinear.pdf">extra
+              examples</a> of solving linear equations.
+            </p>
+            <p>
+              Here's a <a href=
+              "http://archive.nathangrigg.net/teaching/diff-eq/lessons/1F.html">
+              video</a> made by Nathan Grigg, another 307 instructor, which
+              shows the process of solving 1st-order linear equations, so you
+              can get a head start on Friday's class. Thanks Nathan!
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">4/3</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Answers for Practice Integrals</span>
+            <p>
+              Here are <a href=
+              "handouts/solutions/practiceintegrals-solutions.pdf" target=
+              "_blank">answers</a> for the review integrals sheet.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="lessondate">4/3</span>
+          </td>
+          <td class="cbody">
+            <span class="lessontitle">Lesson 2 &mdash; Separable Equations, and
+            Classifying DEs</span>
+            <p>
+              We talked about different ways of classifying DEs: by order,
+              ordinary vs. partial, single equations vs. systems, linear vs.
+              nonlinear, and homogeneous vs. nonhomogeneous. The book discusses
+              this in section 1.3, pages 19-21 (starting from "Classification
+              of Differential Equations" and ending at figure 1.3.1). After
+              that, we started talking about separable equations (section 2.2
+              in the book) and did an example of solving them.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="lessondate">4/1</span>
+          </td>
+          <td class="cbody">
+            <span class="lessontitle">Lesson 1 &mdash; Introduction</span>
+            <p>
+              I'll try to announce the topics for each class ahead of time like
+              this on the website, and include the relevant sections from the
+              book if you need them.
+            </p>
+            <p>
+              We went over the <a href="handouts/syllabus.pdf" target=
+              "_blank">syllabus</a> and talked about what differential
+              equations are, why we study them, and did an example involving a
+              falling object with drag. We also talked about using direction
+              fields to visualize solutions to first-order ODEs. Some of the
+              material you can find in the book, in section 1.1. 
+              <!--            1.3, pages 19-21 (starting from "Classification of Differential
+            Equations" and ending at figure 1.3.1) -->
+               
+              <!--            <p>Here's a set of slides that Nathan Grigg, another 307 instructor, created. It discusses a lot of the topics we'll go over in class. If you want to get a head start, I'd recommend taking a look at it.
+                </p>   -->
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="chead">
+            <span class="date">3/28</span>
+          </td>
+          <td class="cbody">
+            <span class="announcetitle">Welcome to Math 307B!</span>
+            <p>
+              Here's a link to the <a href="handouts/syllabus.pdf" target=
+              "_blank">syllabus</a> and several <a href=
+              "handouts/practiceintegrals.pdf" target="_blank">review
+              integrals</a>. We'll have a short (10-minute) quiz on review
+              integrals Friday.
+            </p>
+            <p>
+              Also, please take a moment to fill out <a href=
+              "https://catalyst.uw.edu/webq/survey/pcaday/197465">this
+              survey</a> to help me choose our regular office hours for the
+              quarter. Thank you!
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- <img src="UW_W-Logo_smallRGB.png" alt="" style="float:right"> -->
+  </body>
+</html>

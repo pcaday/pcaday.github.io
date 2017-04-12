@@ -1,0 +1,130 @@
+\documentclass[11pt]{letter}
+
+\usepackage{stdhw,graphicx}
+\geometry{margin=1in}
+
+% Info on using footnotes in math mode from:
+%    http://tex.stackexchange.com/questions/21813/footnote-in-math-mode
+%  thanks, Leo and lockstep!
+\renewcommand\thefootnote{\fnsymbol{footnote}}
+\addtocounter{footnote}{1}		% start with a dagger instead of an asterisk (easier to see!)
+\begin{document}
+
+
+\textbf{First-Order Linear Equations and Examples}
+
+In class we did some examples of solving first-order linear equations using integrating factors. Here are some more examples and a formula to speed things up.
+
+\textbf{Example 1}: Solve the equation $xy' + y = \fiv x$.
+\hrule
+
+The left-hand side is the derivative of $xy(x)$ with respect to $x$ (where the two terms come from using the product rule, since $y$ is a function of $x$). Since $\smd x(xy)=xy'+y$, the integral of the left-hand side is $\int (xy'+y)\,dx=xy$. So
+\begin{align*}
+	xy' + y &= \frac 1x\\
+	\int (xy'+y)\,dx &= \int \frac 1x\,dx\\
+	xy &= (\ln \abs x)+C\\
+	y &= \frac{(\ln\abs x)+C}{x}.
+\end{align*}
+Again, there are lots of solutions to a differential equation, and for this equation we get one solution for any value of $C$.
+
+\textbf{Example 2}: Solve the equation $xy' + 3y = \fiv x$.
+\hrule
+
+As it is now, the left-hand side isn't the derivative of anything nice like the last example, because $3$ (the coefficient of $y$) isn't the derivative of $x$ (the coefficient of $y'$). First off, to make things easier later, we'll divide both sides by $x$ so $y'$ is by itself:
+\[
+y' + \frac 3x y = \fiv{x^2}.
+\]
+Then we'll try to multiply both sides by the right function (the integrating factor) so that the left-hand side is the derivative of something nice. If $\mu(x)$ is the integrating factor, multiplying both sides by $\mu(x)$ gives
+\[
+\mu(x) y' + \frac{3}{x}\mu(x) y = \frac{\mu(x)}{x^2}.
+\]
+We want $\frac{3}{x}\mu (x)$ to be the derivative of $\mu(x)$, so $\mu$ has to solve the differential equation
+\[
+\mu'(x) = \frac{3}{x}\mu(x).
+\]
+So we have a new differential equation to solve for $\mu$. It's separable, because the right-hand side is a function of $x$ times a function of $\mu$. Let's solve it:
+\begin{align*}
+\dmd \mu x &= \frac{3}{x}\mu(x)\\
+\frac{d\mu}{\mu} &= \frac{3}{x}\,dx\\
+\int\frac{d\mu}{\mu} &= \int\frac{3}{x}\,dx\\
+\ln\abs{\mu} &= 3\ln\abs x+C\\
+\abs\mu &= e^{3\ln\abs x+C}\\
+\abs\mu &= e^C\abs x^3\\
+\abs\mu &= K\abs x^3\\
+\mu &= Kx^3
+\footnotemark
+\end{align*}
+\footnotetext{We can drop the absolute values here, but the reasons are slightly technical and not too interesting. In general, you can usually drop the absolute values that come from integrating $1/x$ when solving differential equations, just like we did here.}
+As usual, there are many solutions, and all are possible choices for $\mu$, but we just need one, so let's choose $K=1$, so $\mu=x^3$.
+
+Returning to the original ODE, we now know we need to multiply both sides by $\mu=x^3$:
+\begin{align*}
+	x^3\left(y' + \frac3x y\right) &= x^3\left(\fiv{x^2}\right)\\
+	x^3y' + 3x^2y &= x
+\end{align*}
+By the product rule, the left-hand side is the derivative of $x^3y$ (with respect to $x$), so integrating both sides with respect to $x$, we get
+\begin{align*}
+	\int (x^3y'+3x^2y)\,dx &= \int x\,dx\\
+	x^3y &= \frac{x^2}{2}+C\\
+	y &= \frac{1}{2x}+\frac{C}{x^3}.
+\end{align*}
+
+
+
+
+\textbf{Example 3}: Solve the equation $xy'+4xy=x^2e^{-4x}$ and find the solution with $y(1)=3e^{-4}$.
+\hrule
+
+\textit{Step 1:} Like before, let's start by dividing both sides by $x$ to get $y'$ by itself:
+\[
+y' + 4y = xe^{-4x}.
+\] 
+
+\textit{Step 2:} Multiply both sides by the (unknown at this point) integrating factor $\mu(x)$:
+\[
+\mu(x)y' + 4\mu(x)y = \mu(x)xe^{-4x}.
+\]
+
+\textit{Step 3:} Find $\mu(x)$.
+
+We want $4\mu(x)$ to be the derivative of $\mu(x)$, so we get the differential equation
+\begin{align*}
+	\mu'&=4\mu
+\end{align*}
+and solving:
+\begin{align*}
+	\dmd\mu x &= 4\mu\\
+	\frac{d\mu}{\mu} &= 4\,dx\\
+	\int\frac{d\mu}{\mu} &= \int 4\,dx\\
+	\ln\abs\mu &= 4x + C\\
+	\abs\mu &= e^Ce^{4x}\\
+	\abs\mu &= Ke^{4x}\\
+	\mu &= Ke^{4x}.
+\end{align*}
+and choosing $K=1$ again, we get $\mu=e^{4x}$.
+
+\textit{Step 4:} Returning to the original ODE, integrate and solve for $y$:
+
+Plugging in $\mu=e^{4x}$, we get
+\begin{align*}
+	e^{4x}y' + 4e^{4x}y &= x\\
+	\int (e^{4x}y' + 4e^{4x}y)\,dx &= \int x\,dx\\
+	e^{4x}y &= \frac{x^2}{2}+C\\
+	y &= \frac{x^2e^{-4x}}{2} + Ce^{-4x}.
+\end{align*}
+
+\textit{Final step:} In this problem, we were asked to pinpoint the solution with $y(0)=3$. So far, we've found that $y = \frac{x^2e^{-4x}}{2} + Ce^{-4x}$ is a solution for any value of $C$. So what we want to do now is to find the value of $C$ so that $y(0)=3$. Plugging $x=0$ into the equation, we get
+\begin{align*}
+	y(0) &= \frac{1^2e^{-4\cdot 1}}{2} + Ce^{-4\cdot 1}\\
+		&= \fiv 2e^{-4}+Ce^{-4}\\
+		&= \left(C+\fiv 2\right)e^{-4}.
+\end{align*}
+Since $y(0)=3e^{-4}$, we get $3e^{-4}=\left(C+\fiv 2\right)e^{-4}$, so $3=C+\fiv 2$, or $C=\frac52$.
+The final solution, then, is
+\[
+y(x) = \frac{x^2e^{-4x}}{2} + \frac52 e^{-4x}.
+\]
+
+\textbf{Note:} The condition $y(1)=3$ is called an \emph{initial condition}, and a differential equation together with initial condition(s) is called an \emph{initial value problem}. Soon we'll discuss initial value problems further in class.
+
+\end{document}

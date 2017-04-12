@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<link href="../main.css" rel="stylesheet" type="text/css">
+<title>Scattering Control</title>
+
+<script src="zooming.js"></script>
+
+
+<body>
+
+<div class="navbg">
+<nav>
+<ul>
+<li><span><a href=".."><img src="../graphics/home-white.svg" style="width:1em;height:1em" alt=""/> Home</a></span></li>
+<li><span><a href="index.html">Research</a></span></li>
+<li><span><a href="../software">Software</a></span></li>
+<li><span><a href="../teaching">Teaching</a></span></li>
+</ul>
+</nav>
+</div>
+
+<div class="main">
+
+<h1>Scattering Control</h1>
+
+<div class="sidefigures" style="text-align:center">
+
+<div class="zoomable"><div class="zwrapper">
+<span class="zcloser" onclick="zescape()">&times;</span>
+<div class="zhint">
+<table class="doublefig" onclick="zenter(this)">
+<tr>
+<td><img src="../plots/scatteringcontrol/TenStep0.svg" class="fit"/></td>
+<td><img src="../plots/scatteringcontrol/TenStep100.svg" class="fit"/></td>
+</tr>
+<tr>
+<td><i>Original wave field</i></td>
+<td><i>After scattering control</i></td>
+</tr>
+</table>
+</div>
+
+<p>
+<b>1D example</b> of scattering control for a medium with ten interfaces; time is on the vertical axis. Scattering control eliminates the complex multiple reflections completely automatically.
+</p>
+
+</div></div>
+
+<div class="zoomable"><div class="zwrapper">
+<span class="zcloser" onclick="zescape()">&times;</span>
+<div class="zhint">
+<table class="doublefig" onclick="zenter(this)">
+<tr>
+<td><img src="../plots/scatteringcontrol/TwoStep2D0-2T.svg" class="fit"/></td>
+<td><img src="../plots/scatteringcontrol/TwoStep2D4-2T.svg" class="fit"/></td>
+</tr>
+<tr>
+<td><i>Original wave field</i></td>
+<td><i>After scattering control</i></td>
+</tr>
+</table>
+</div>
+
+<p>
+<b>2D example</b> of scattering control for a medium with two flat interfaces. The smaller wavefront to the right of interfaces (a multiple reflection) is removed. Click <a href="../plots/scatteringcontrol/ScatteringControl.mp4" target="_blank">here</a> for a movie.
+</p>
+
+</div></div>
+
+
+</div>
+
+<p>
+In seismic and ultrasound imaging, we probe an object with waves to find out what is inside. Once inside, the propagating wave reflects and refracts whenever the medium properties change, such as at a tissue boundary or at a new rock layer. After some number of reflections or refractions, some of these waves eventually reach the surface where they can be detected. From this data we try to recover what lies within our object.
+</p>
+
+<p>
+In many imaging algorithms, only the <i>single reflection events</i>, in which a wave has reflected only once, are desired. The remaining <i>multiple reflections</i> are often nuisances that confuse data interpretation; a large amount of research has been directed toward attenuating or removing their contribution to the data.
+</p>
+
+<p>
+In a recent paper, coauthors Vitaly Katsnelson, Maarten de Hoop, Gunther Uhlmann and I developed and rigorously analyzed a scattering control series which allows us to cancel multiple scattering without knowing what lies within the object. The method, which is inspired by work by Rose<sup><a href="#references">[1]</a></sup> in 1D and the Marchenko equation, as well as recent work on Marchenko imaging by Wapenaar and collaborators<sup><a href="#references">[2]</a></sup>, is detailed in our <a href="https://arxiv.org/abs/1701.01070" target="_blank">preprint</a>.
+</p>
+
+<p>
+Our method translates directly into a practical numerical algorithm, which I implemented in object-oriented MATLAB and C++.
+You can see examples of it in action to the right in 1D and 2D, or in this <a href="../plots/scatteringcontrol/ScatteringControl.mp4" target="_blank">movie</a>. In the 2D examples, a Krylov method (MINRES) is used to accelerate convergence.
+</p>
+
+<p><a href="index.html">Back to Research</a></p>
+
+
+<div class="references" id="references">
+<p>
+[1] James H. Rose, "Single-sided autofocusing of sound in layered materials." <i>Inverse Problems</i> <b>18</b> (2002).</p>
+
+<p>
+[2] Kees Wapenaar et al., "Marchenko imaging." <i>Geophysics</i> <b>79</b> (2014).</p>
+</div>
+
+
+
+</div>
+
+</body>
+</html>

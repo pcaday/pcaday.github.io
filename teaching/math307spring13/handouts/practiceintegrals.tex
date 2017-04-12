@@ -1,0 +1,52 @@
+\documentclass[11pt]{letter}
+
+\usepackage{stdhw,graphicx,ifthen}
+\geometry{margin=1in}
+
+\newboolean{withanswers}
+\setboolean{withanswers}{false}
+
+
+\begin{document}
+
+\textbf{Practice Integrals -- Math 307}
+
+\begin{enumerate}
+\item $\displaystyle\int x\sin (3x)\,dx$
+
+\item $\displaystyle\int x^2e^{-2x}\,dx$
+
+\item $\displaystyle\int \sin x\cos x\,dx $
+
+\item $\displaystyle\int \cos^2x\,dx$
+
+\item $\displaystyle\int \frac{1}{x\cdot(\ln x)^2}\,dx$
+
+\item $\displaystyle\int e^{(3-\cos x)}\sin x\,dx$
+
+\item $\displaystyle\int e^{-st}\cos 5t\,dt$\quad ($s$ is a constant)
+\end{enumerate}
+
+\ifthenelse{\boolean{withanswers}}{
+\textit{Answers:}
+
+\begin{enumerate}	
+\item $\displaystyle -\fiv 3 x\cos(3x)+\fiv 9\sin(3x)+a$.
+
+%\item $\displaystyle \frac{3}{34}e^{3x}\cos(5x)+\frac{5}{34}e^{3x}\sin(5x)+b$.
+
+\item $\displaystyle -\fiv 2x^2e^{-2x} -\fiv 2xe^{-2x}-\fiv 4e^{-2x}+b$.
+
+\item $\displaystyle -\fiv 4 \cos(2x)+d$. Other correct answers are $\displaystyle\fiv2\sin^2(x)+d$ or $\displaystyle-\fiv2\cos^2(x)+d$.\\\quad\textit{(Question to think about: why are these answers all correct?)}
+
+\item $\displaystyle \frac {x}{2}+\frac{\sin 2x}{4}+c$.
+
+\item $\displaystyle -\fiv{\ln x}+f$.
+
+\item $\displaystyle e^{(3-\cos x)}+g$.
+
+\item $\displaystyle e^{-st}\frac{-s\cos(5t)+5\sin(5t)}{s^2+25}+h$.
+\end{enumerate}
+}{}
+
+\end{document}

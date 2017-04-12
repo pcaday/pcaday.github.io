@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<link href="../main.css" rel="stylesheet" type="text/css">
+<title>Cancellation in Synthetic Aperture Radar</title>
+
+<script src="zooming.js"></script>
+
+<body>
+
+<div class="navbg">
+<nav>
+<ul>
+<li><span><a href=".."><img src="../graphics/home-white.svg" style="width:1em;height:1em" alt=""/> Home</a></span></li>
+<li><span><a href="index.html">Research</a></span></li>
+<li><span><a href="../software">Software</a></span></li>
+<li><span><a href="../teaching">Teaching</a></span></li>
+</ul>
+</nav>
+</div>
+
+<div class="main">
+
+<h1>Image Cancellation in Undirected Synthetic Aperture Radar</h1>
+
+<div class="sidefigures" style="text-align:center">
+
+<div class="zoomable"><div class="zwrapper">
+<span class="zcloser" onclick="zescape()">&times;</span>
+<div class="zhint" onclick="zenter(this)">
+
+<table class="doublefig" onclick="zenter(this)">
+<tr>
+<td><img src="../plots/sar/SAROriginal.svg" class="fit"/></td>
+<td><img src="../plots/sar/SARCancelling.svg" class="fit"/></td>
+</tr>
+<tr>
+<td><b>(a)</b> A set of objects and four flight paths, in red.</td>
+<td><b>(b)</b> Additional objects added to hide the original objects from view of all four flight paths.</td>
+</tr>
+</table>
+</div>
+
+</div></div>
+
+
+<div class="zoomable" style="margin-top: 1em;"><div class="zwrapper">
+<span class="zcloser" onclick="zescape()">&times;</span>
+<div class="zhint" onclick="zenter(this)">
+
+
+<div style="padding: 0 1em;"><img src="../plots/sar/SARReconstruct.svg" class="halfwidthcentered"/></div>
+<p><b>(c)</b> SAR image of the scene in (b); the objects are mostly concealed.</p>
+
+</div>
+</div></div>
+
+</div>
+
+<p>
+In synthetic aperture radar (SAR), a radar system mounted on an airplane or satellite travels along a prescribed path, repeatedly sending radar pulses and listening for the echos, which are processed into an image. The radar beam, rather than being omnidirectional, only illuminates one side of the flight path, for a good reason: due to symmetry, it is otherwise impossible to tell if an echo comes from the left or right.
+</p>
+
+<p>
+Unfortunately, for low-frequency radar (used for foliage penetration, for instance), it may not be practical to build an antenna with a sufficiently directional radiation pattern. The result is a left-right ambiguity: every object will have a mirror image on the other side of the path. It may be possible to lessen this ambiguity with a curved flight path<sup>[1]</sup>, but in a certain mathematical sense it cannot be avoided<sup>[2]</sup>.
+</p>
+
+<p>
+In this project, under co-advisors Gunther Uhlmann and Plamen Stefanov, I studied the image artifacts (ghost images) that can appear, from a mathematical perspective, and whether it is possible to conceal an object from a given flight path. In tandem, I implemented a wave solver-based algorithm for computing these ghost images and concealing objects in MATLAB. More information is available in this <a href="http://iopscience.iop.org/article/10.1088/0266-5611/31/1/015002/meta">paper</a>.
+</p>
+
+<div class="references">
+<p>[1] C. Nolan and M. Cheney, "Synthetic aperture inversion for arbitrary flight paths and nonflat topography." <i>IEEE Trans. Image Process.</i> <b>12</b> (2003).</p>
+
+<p>
+[2] G. Uhlmann and P. Stefanov, "Is a curved flight path in SAR better than a straight one?" <i>SIAM J. Appl. Math.</i> <b>73</b> (2013).</p>
+</div>
+
+<p><a href="index.html">Back to Research</a></p>
+
+
+</div>
+
+</body>
+</html>

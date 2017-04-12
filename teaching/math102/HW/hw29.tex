@@ -1,0 +1,52 @@
+\documentclass[12pt]{letter}
+
+\usepackage{stdhw,mathpazo,array,pifont}
+
+\renewcommand{\question}[1]{\textbf{#1}\quad}
+\renewcommand{\brackeqn}[1]{\left\{\begin{array}{rl}#1\end{array}\right.}
+
+
+\newcounter{tci}
+
+\newcommand{\tcialpha}{%
+	\stepcounter{tci}%
+	(\alph{tci})%
+}
+
+\newenvironment{twocolitems}
+{
+\setcounter{tci}{0}
+\renewcommand{\arraystretch}{1.8}
+\begin{tabular}{>{\makebox[0.5in]{\tcialpha}$}l<{$}>{\hspace*{0.2in}\makebox[0.5in]{\tcialpha}$}l<{$}}
+}
+{
+\end{tabular}
+}
+
+
+\begin{document}
+
+\textbf{Assignment 29}: due Monday, March 5
+
+\ding{226}\quad 58 III, VII
+
+\ding{226}\quad 59 II(a--c), IV
+
+\ding{226}\quad Worksheet (problems below)
+
+
+
+\bigskip
+
+\textbf{Worksheet problems}
+
+Solve by completing the square.\\Check at least one of your solutions in the original equation.
+
+\begin{twocolitems}
+	x^2-10x+21=0	& x^2-4x+2=0\\
+	x^2-6x=-6	& x^2+2x+1=8\\
+	x^2+5x=-4	& x^2+7x+9=0
+\end{twocolitems}
+
+
+\end{document}

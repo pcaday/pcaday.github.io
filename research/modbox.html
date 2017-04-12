@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<link href="../main.css" rel="stylesheet" type="text/css">
+<title>Computing Fourier Integral Operators</title>
+
+<script src="zooming.js"></script>
+
+<body>
+
+<div class="navbg">
+<nav>
+<ul>
+<li><span><a href=".."><img src="../graphics/home-white.svg" style="width:1em;height:1em" alt=""/> Home</a></span></li>
+<li><span><a href="index.html">Research</a></span></li>
+<li><span><a href="../software">Software</a></span></li>
+<li><span><a href="../teaching">Teaching</a></span></li>
+</ul>
+</nav>
+</div>
+
+<div class="main">
+
+<h1>Computing Fourier Integral Operators</h1>
+
+<div class="sidefigures" style="text-align:center">
+
+<div class="zoomable"><div class="zwrapper">
+<span class="zcloser" onclick="zescape()">&times;</span>
+<div class="zhint">
+<table class="triplefig" onclick="zenter(this)">
+<tr>
+<td><img src="../plots/modbox/RInput.png" class="fit"/>
+<img src="../plots/modbox/RInputCB.svg" class="fit"/></td>
+<td><img src="../plots/modbox/RModbox.png" class="fit"/>
+<img src="../plots/modbox/RModboxCB.svg" class="fit"/></td>
+<td><img src="../plots/modbox/RRef.png" class="fit"/>
+<img src="../plots/modbox/RRefCB.svg" class="fit"/></td>
+</tr>
+<tr>
+<td><i>Input</i></td>
+<td><i>Modified Box Algorithm</i></td>
+<td><i>Reference Algorithm</i></td>
+</tr>
+</table>
+</div>
+
+<p>
+Radon transform (sinogram) computed using the modified box algorithm, as well as a standard reference algorithm. While modified box only approximates the Radon transform, it is quite close to the true result.
+</p>
+
+</div></div>
+
+<div class="zoomable"><div class="zwrapper">
+<span class="zcloser" onclick="zescape()">&times;</span>
+<div class="zhint">
+<table class="triplefig" onclick="zenter(this)">
+<tr>
+<td><img src="../plots/modbox/HInput.png" class="fit"/></td>
+<td><img src="../plots/modbox/HModbox.png" class="fit"/></td>
+<td><img src="../plots/modbox/HRef.png" class="fit"/></td>
+</tr>
+<tr>
+<td><i>Input</i></td>
+<td><i>Modified Box Algorithm</i></td>
+<td><i>Reference Algorithm</i></td>
+</tr>
+</table>
+</div>
+
+<p>
+Half-wave propagator computed using the modified box algorithm, as well as a reference pseudospectral algorithm. Brightness and hue represent the complex amplitude and phase.
+</p>
+
+</div></div>
+
+</div>
+
+<p>
+Fourier integral operators (FIOs) are a class of mathematical operators with a rather technical mathematical description but also widespread real-world applications. Some examples of these operators are:
+</p>
+
+<ul style="list-style-type:none;">
+<li>&ndash;&nbsp;&nbsp;propagation of sound, light, and mechanical waves in complex media</li>
+<li>&ndash;&nbsp;&nbsp;the Radon transform and X-ray transform, which model CT imaging</li>
+<li>&ndash;&nbsp;&nbsp;differential and pseudodifferential operators</li>
+</ul>
+
+<p>
+In imaging, FIOs can be very helpful in understanding what kind of features can be accurately reconstructed from available data, and what artifacts may occur. If the underlying physical process is described by an FIO, an asymptotic formula for image formation can usually be derived.
+</p>
+
+<p>
+In this project, I refined and implemented the modified box algorithm of de Hoop et al.<sup>[1]</sup>, which can approximately compute a large subclass of FIOs, including the examples listed above. Unlike previous algorithms, the new algorithm uses a very natural description of the operator that is usually easy to derive and numerically implement. You can find the mathematical details in this <a href="http://iopscience.iop.org/article/10.1088/0266-5611/32/12/125001/meta">paper</a> and the MATLAB/C++ code on <a href="https://github.com/pcaday/Modbox">GitHub</a>.
+</p>
+
+<p>
+Below, several examples of the new modified box algorithm for some common imaging operators are shown. While not implemented yet, it is also possible to automatically compute an FIO's inverse with no additional information.
+</p>
+
+
+<div class="references">
+<p>[1] M. V. de Hoop, G. Uhlmann, A. Vasy, and H. Wendt, "Multiscale discrete approximations of Fourier integral operators associated with canonical transformations and caustics." <i>Multiscale Model. Simul.</i> <b>11</b> (2013).</p>
+</div>
+
+<p><a href="index.html">Back to Research</a></p>
+
+
+</div>
+
+</body>
+</html>

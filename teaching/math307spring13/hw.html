@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<head>
+<title>Math 307B - Spring 2013 - Homework</title>
+<link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+
+<!-- Ideas from the webpages of Dr. Taggart
+      and Mauricio Duarte -->
+
+
+<body>
+
+
+    <div class="title">
+      <a href="index.html" class="titlelink">Math 307B &mdash; Spring 2013</a>
+      <ul class="toplinks">
+        <li class="toplinks">
+          <a href="index.html" class="toplinks">Main Page</a>
+        </li>
+        <li class="toplinks">
+          <a href="hw.html" class="toplinks">Homework</a>
+        </li>
+        <li class="toplinks">
+          <a href="https://catalyst.uw.edu/gopost/board/pcaday/32837" class="toplinks">Discussion Board</a>
+        </li>
+        <li class="toplinks">
+          <a href="examarchive/index.html" class="toplinks">Exam Archive</a>
+        </li>
+        <li class="toplinks">
+          <a href="https://catalyst.uw.edu/gradebook/pcaday/75636" class=
+          "toplinks">Gradebook</a>
+        </li>
+      </ul>
+    </div>
+
+
+<div class="fullpanel" style="padding:20px">
+
+<p>
+Homework numbers are from the 9th edition of <i>Elementary Differential Equations and Boundary Value Problems</i>, by William E. Boyce and Richard C. DiPrima. If you have the 8th edition, you should have most of the problems: see <a href="http://www.math.washington.edu/~m307/m307text.html">this page</a> for more information.
+</p>
+
+
+<span class="hwtitle">Homework 7 &mdash; <span class="hwduedate">due Friday, 6/7</span></span>
+<hr />
+
+<p>
+<strong>To turn in:</strong><br />
+6.3: 6, 12<br/>
+6.4: 6a, 5a, 4a <i>(these are listed in rough order of difficulty)</i><br/>
+</p>
+
+
+
+<!-- Homework 6 -->
+<span class="hwtitle">Homework 6 &mdash; <span class="hwduedate">due Friday, 5/31</span></span>
+<hr />
+
+<p>
+This week's homework problems are <a href="hw/hw6.pdf">here</a>. Here are <a href="hw/hw6answers.pdf">answers</a> for the additional problems so you can check your answers.
+</p>
+
+<span class="hwtitle">Homework 5 &mdash; <span class="hwduedate">due Friday, 5/17</span></span>
+<hr />
+
+<p>
+The homework problems for this week are listed <a href="hw/hw5.pdf">here</a>.
+</p>
+
+<span class="hwtitle">Homework 4 &mdash; <span class="hwduedate">due Friday, 5/10</span></span>
+<hr />
+
+<p>
+<strong>To turn in:</strong><br />
+3.5: 5, 28<sup>***</sup>, 29<sup>**</sup>, 12<sup>*</sup>, 15<sup>*</sup><br/>
+<strike>3.5: 18<sup>*</sup>;  3.7: 3, 4</strike> (will be on homework 5 instead)<br />
+</p>
+
+<p>
+	<i>
+		<sup>*</sup><b>Important</b>: Wait on these problems until we talk about multiplying trial solutions by <i>t</i>.
+	</i>
+</p>
+
+<p>
+	<i>
+		<sup>**</sup>Note on 3.5 #29: To plot the graphs of these piecewise defined functions, you can use a graphing calculator or an online tool like <a href="http://dlippman.imathas.com/g1/fullgrapher2d.html">this one</a> or <a href="http://www.wolframalpha.com">Wolfram Alpha</a> to plot each piece of the function separately (the part 0 &le; t &le; &pi; and the part t &ge; &pi;).
+	</i>
+</p>
+
+<p>
+	<i>
+		<sup>***</sup> Hint on 3.5, #28: You don't have to tackle the entire sum on the right hand side at once. Here's a fact that might help: suppose <i>y<sub>1</sub></i>(<i>t</i>) and <i>y<sub>2</sub></i>(<i>t</i>) are two functions, and say that when you plug <i>y<sub>1</sub></i>(<i>t</i>) into <i>y''</i> + &lambda;<sup>2</sup><i>y</i> you get the function <i>g<sub>1</sub></i>(<i>t</i>) and when you plug <i>y<sub>2</sub></i>(<i>t</i>) into <i>y''</i> + &lambda;<sup>2</sup><i>y</i>, you get <i>g<sub>2</sub></i>(<i>t</i>):</p>
+
+<p><i>y<sub>1</sub></i>(<i>t</i>)<i>''</i> + &lambda;<sup>2</sup><i>y<sub>1</sub></i>(<i>t</i>) = <i>g<sub>1</sub></i>(<i>t</i>)</p>
+
+<p><i>y<sub>2</sub></i>(<i>t</i>)<i>''</i> + &lambda;<sup>2</sup><i>y<sub>2</sub></i>(<i>t</i>) = <i>g<sub>2</sub></i>(<i>t</i>)</p>
+
+	<p> Now if you plug in <i>y<sub>1</sub></i>(<i>t</i>) + <i>y<sub>2</sub></i>(<i>t</i>), you should check that you get </p>
+
+<p>(<i>y<sub>1</sub></i>(<i>t</i>) + <i>y<sub>2</sub></i>(<i>t</i>))<i>''</i> + &lambda;<sup>2</sup>(<i>y<sub>1</sub></i>(<i>t</i>) + <i>y<sub>2</sub></i>(<i>t</i>)) = <i>g<sub>1</sub></i>(<i>t</i>) + <i>g<sub>2</sub></i>(<i>t</i>)</p>
+
+	<p> How can we use this fact? Well, let's imagine <i>N</i> = 2 in the problem for a second, so the the right-hand side of our nonhomogeneous equation consists of two functions added together, <i>a<sub>1</sub></i> sin <i>&pi;t</i> + <i>a<sub>2</sub></i> sin <i>2&pi;t</i>. Instead of solving the original equation, we can solve the two simpler equations</p>
+
+<p><i>y<sub>1</sub></i>(<i>t</i>)<i>''</i> + &lambda;<sup>2</sup><i>y<sub>1</sub></i>(<i>t</i>) = <i>a<sub>1</sub></i> sin <i>&pi;t</i></p>
+
+<p><i>y<sub>2</sub></i>(<i>t</i>)<i>''</i> + &lambda;<sup>2</sup><i>y<sub>2</sub></i>(<i>t</i>) = <i>a<sub>2</sub></i> sin <i>2&pi;t</i></p>
+
+	<p>and then add together <i>y<sub>1</sub></i> and <i>y<sub>2</sub></i> to get a solution to the original equation, using the fact we found above.</p>
+
+	</i>
+</p>
+
+
+<!-- possible problems in 3.7: 16, 21, 30 -->
+<!-- <p>
+<strong>To solve (not to be turned in; will not be graded):</strong><br />
+3.5: 7, 17, 22(a)<br/>
+3.7: 6, <strike>18</strike><br />
+</p> -->
+
+
+
+<!-- Homework 3 -->
+
+<span class="hwtitle">Homework 3 &mdash; <span class="hwduedate">due Friday, 5/3</span></span>
+<hr />
+
+<p>
+<strong>To turn in:</strong><br />
+2.7: 20<br/>
+3.1: 23, 26(a,b,d)<br />		<!-- 22(a,b -- with hint)? -->
+3.4: 11<sup>**</sup>, 32<sup>*</sup><br />
+3.3: 19<sup>**</sup>, 38<sup>***</sup><br />
+</p>
+
+<p>
+	<i>
+		<sup>*</sup> Note on 3.4, #32: In the final step of this problem, you will encounter an integral that can't be evaluated. In your final answer, you can leave this integral as is.
+	</i>
+</p>
+
+<p>
+	<i>
+		<sup>**</sup> Note on 3.3, #19, 3.4 #11: Describing the solution's behavior for increasing <i>t</i> means: what does the solution do as <i>t</i> goes to infinity? Does it have a limit, or does it grow without bound? Write a sentence or two to explain what the solution is doing and show any necessary calculations to back up your statement.
+	</i>
+</p>
+
+<p>
+	<i>
+		<sup>***</sup> Note on 3.3 #38: You don't need the information from section 3.3 (which we won't cover in class until Wednesday) to do this problem.
+	</i>
+</p>
+
+
+<p>
+<strong>Extra problems for practice (not to be turned in; will not be graded):</strong><br />
+2.7: 15<br />
+3.1: 20, 22, 27<br />
+3.4: 29, 39<br />
+3.3: 5, 24<br />
+</p>
+
+
+
+
+
+
+
+
+
+<span class="hwtitle">Homework 2 &mdash; <span class="hwduedate">due <strike>Wednesday, 4/17</strike> Friday, 4/19</span></span>
+<hr />
+
+<p>
+<strong>To turn in:</strong><br />
+2.1: 24(b)<sup>*</sup><br/> <!--, 26(b)<sup>*</sup> -->
+2.3: 4, 13, 19, 21(a,b), 26, 27(a)<br />
+</p>
+
+<!-- note, next time mention you have to approximate the solution for 21(b) -->
+
+<p><i>Note on 2.1, problem<!-- s --> 24(b)<!--, 26(b)-->: Don't worry about finding the critical value &mdash; you can just solve the equation...</i></p>
+
+
+<span class="hwtitle">Homework 1 &mdash; <span class="hwduedate">due Monday, 4/8</span></span>
+<hr />
+
+<p>
+<strong>To turn in:</strong><br />
+1.3: 14<br/>
+2.2: 22, 26, 34<br/>
+2.1: 2(a-b), 7c, 31<br/>
+<!--2.1: 16, 24(b,c)<sup>*</sup>, 31<br />
+2.2: 21, 26<br /> -->
+</p>
+
+
+</div>
+
+
+<!-- <img src="UW_W-Logo_smallRGB.png" alt="" style="float:right"> -->
+
+</body>
+</html>

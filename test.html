@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+html { font-family: sans-serif; }
+
+body {
+	background-color: #FFFFFF;
+    color: #666;
+    margin: 0;
+    padding: 0;
+}
+
+
+div.navbg {
+	background-color: #555;
+    color: white;
+    padding: 0.75em 1em;
+    overflow: hidden;
+/*    border-bottom: solid 2px #4690CC;*/
+}
+
+nav a { color: white; }
+
+nav ul {
+	padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+nav li {
+	display: inline-block;
+    float: right;
+    margin: 0.3em 0.3em;
+}
+
+nav li span {
+	margin-right: 0px;
+	border-radius: 5px;
+    font-weight: 900;
+    font-size: 14px;
+    padding: 0.4em 0.6em;
+    transition: all 0.1s;
+    text-decoration: none;
+}
+
+nav li a {
+	text-decoration: none;
+}
+
+/*nav li { margin-right: 10px; }
+nav li a {
+	border-radius: 5px;
+    font-weight: 900;
+    font-size: 14px;
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+    transition: all 0.05s;
+    text-decoration: none;
+}*/
+/*nav li a:hover   { background-color: #247CCC; }*/
+nav li a:hover {
+	border-bottom: 2px solid #247CCC;
+    text-decoration: none;
+}
+
+nav li span.current a:hover {
+	border: none;
+}
+
+nav li span.current {
+	background-color: #247CCC;
+}
+
+nav li span.current a {
+    color: #FFFFFF;
+}
+
+hr.navrule {
+    display: block;
+    margin-top: 2px;
+    border-bottom: solid 2px #555;
+}
+
+div.main {
+	padding: 1em 70px 0em 100px;
+}
+
+h1 {
+	margin-left: -30px;
+}
+
+h2 {
+	margin-left: -30px;
+    margin-top: 2em;
+}
+
+div.projoverview {
+	display: inline-block;
+    vertical-align: top;
+    margin-right: 2em;
+    margin-bottom: 1.5em;
+}
+
+img.pover {
+	height: 6em;
+	width: 6em;
+    display: inline-block;
+    vertical-align: middle;   
+}
+
+div.povertext {
+/*	height: 6em; */
+    line-height: 1.25em;
+    display: inline-block;
+    margin-left: 1em;
+    vertical-align: middle;
+    width: 20em;
+}
+
+span.povertitle {
+	display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+a {
+	color: #247CCC;
+    text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+</style>
+
+<body>
+
+<div class="navbg">
+<nav>
+<ul>
+<li><span><a href="index.html"><img src="graphics/home-white.svg" style="width:1em;height:1em"/></a></span></li>
+<li><span class="current"><a href="teaching.html">Teaching</a></span></li>
+<li><span><a href="software.html">Software</a></span></li>
+<li><span><a href="research.html">Research</a></span></li>
+</ul>
+</nav>
+</div>
+
+<div class="main">
+<h1>Research</h1>
+<p>
+My current research...
+</p>
+
+<h2>Selected Projects</h2>
+
+<div class="projoverview">
+	<img src="file:///Users/pcaday/Desktop/dummy.png" alt="" class="pover"/><div class="povertext">
+    	<span class="povertitle">Optimal Transport FWI</span>
+        <span class="poverdescr">A new algorithm for wave-based imaging that aims for high resolution and robustness. <a href="test">more...</a></span>
+    </div>
+</div>
+<div class="projoverview">
+	<img src="file:///Users/pcaday/Desktop/dummy.png" alt="" class="pover"/><div class="povertext">
+    	<span class="povertitle">Scattering Control Series</span>
+        <span class="poverdescr">An algorithm for removing multiple scattering and focusing waves inside an object. <a href="test">more...</a></span>
+    </div>
+</div>
+<div class="projoverview">
+	<img src="file:///Users/pcaday/Desktop/dummy.png" alt="" class="pover"/><div class="povertext">
+    	<span class="povertitle">Optimal Transport FWI</span>
+        <span class="poverdescr">A new algorithm for seismic imaging that aims to improve FWI's robustness. <a href="test">more...</a></span>
+    </div>
+</div>
+<div class="projoverview">
+	<img src="file:///Users/pcaday/Desktop/dummy.png" alt="" class="pover"/><div class="povertext">
+    	<span class="povertitle">Optimal Transport FWI</span>
+        <span class="poverdescr">A new algorithm for seismic imaging that aims to improve FWI's robustness. <a href="test">more...</a></span>
+    </div>
+</div>
+<div class="projoverview">
+	<img src="file:///Users/pcaday/Desktop/dummy.png" alt="" class="pover"/><div class="povertext">
+    	<span class="povertitle">Optimal Transport FWI</span>
+        <span class="poverdescr">A new algorithm for seismic imaging that aims to improve FWI's robustness. <a href="test">more...</a></span>
+    </div>
+</div>
+
+
+</div>
+
+</body>
+</html>

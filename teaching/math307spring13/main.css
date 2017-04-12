@@ -1,0 +1,342 @@
+/*
+ *  main.css
+ *
+ *   Main CSS file for website. Provides definitions for:
+ *    - a sidebar
+ *    - content pane
+ *    - title banner
+ */
+
+
+/* The next two lines make the line heights consistent: thanks to BWRic's answer here:
+    http://stackoverflow.com/questions/1530685/html-sup-tag-affecting-line-height-how-to-make-it-consistent */
+
+sup {
+        font-size: 0.83em;
+        vertical-align: super;
+        line-height: 0;
+}
+
+sub {
+	font-size: 0.83em;
+	vertical-align: sub;
+	line-height: 0;
+}
+
+td {line-height:135%}
+
+em {
+	color:#e05031;
+	font-style: normal;
+}
+
+body {
+	background-color:#eee;	/* #f09010, #ffc234 */
+	margin:10px;
+	width:800px;
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:auto;
+	margin-right:auto;
+	color:#444;			/* 801111, #901111 */
+}
+
+a:visited {
+	color:#800000;
+}
+
+/* Common properties for all divs */
+
+.fullpanel, .mainpanel, .sidebarbox, .title {
+	background-color:white;
+	border:2px solid #e05031;	/* #ff8600 */
+	margin:10px;
+	padding:8px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+.sidebarbox {
+	margin-bottom:20px;
+	padding-bottom:12px;
+}
+
+.title {
+	font-weight:bold;
+	font-size:120%;
+	text-align:center;
+}
+
+.sidebar {
+	float:left;
+	width:350px;
+}
+
+.mainpanel {
+	float:left;
+	width:410px;
+}
+
+.fullpanel {
+	/* nothing new */
+}
+
+div.dash {
+	margin-top:0;
+	margin-bottom:0;
+	margin-right:5px;
+	margin-left:5px;
+	padding:0;
+	border:1px solid #e06d15;
+	border-radius:0px;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+	width:auto;
+}
+
+hr {
+	color:#e05031;
+	background-color:#e05031;
+	height:1px;
+	border:none;
+	margin:8px;
+}
+
+/* Side box styles */
+
+span.sbtitle {
+	display:block;
+	font-weight:bold;
+	color:#e05031;
+	padding-top:1px;
+	padding-bottom:0px;
+}
+
+ul.sbindent, ul.sbindentitalic {
+	list-style-type:none;
+	padding:0px;
+	margin-right:0px;
+	margin-left:18px;
+	margin-top:0px;
+	margin-bottom:0px;
+	font-style:normal;
+}
+
+ul.sbindentitalic {
+	font-style:italic;
+}
+
+div.sbspacer {
+	height:4px;
+	width:1px;
+	display:block;
+	padding:0px;
+	margin:0px;
+}
+
+a.linklist {
+        display:block;
+        padding-left:10px;
+        padding-top:5px;
+        padding-bottom:0px;
+        margin:0px;
+}
+
+span.sbentry {
+        display:block;
+        padding-left:10px;
+        padding-bottom:0px;
+        margin:0px;
+}	
+
+
+/* Top navigation bar styles */
+
+ul.toplinks {
+	list-style-type:none;
+	margin:0px;
+	padding:5px 0px 0px 0px;
+	overflow:hidden;
+}
+
+li.toplinks {
+	display:inline;
+}
+
+a.toplinks {
+	text-align:center;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:3px;
+	padding-bottom:3px;
+	text-decoration:none;
+	font-size:85%;
+	color:#e05031;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+a.toplinks:hover, a.toplinks:active, a.toplinkscurrent {
+	background-color:#e05031;
+	color:white;
+}
+
+a.titlelink {
+	color:#c00000;
+/*	color:#e06d15;	*/
+	text-decoration:none;
+}
+
+/* Office hours table */
+
+
+table.oh {
+	border-collapse:collapse;
+        padding-left:10px;
+}
+
+td.oh-day, td.oh-from, td.oh-dash, td.oh-to, td.oh-who, td.ohc-from, td.ohc-to, td.ohc-who {
+	border:none;
+	padding:0px;
+}
+
+td.oh-day {
+	padding-left:10px;
+	color:#e05031;
+	font-weight:bold;
+	text-align:center;
+}
+
+td.oh-from, td.oh-who, td.ohc-from, td.ohc-who {
+	padding-left:18px;
+}
+
+td.oh-from, td.ohc-from {
+	text-align:right;
+}
+
+/* to delineate changed/moved/cancelled office hours */
+td.ohc-who, td.ohc-from, td.ohc-to {
+	font-style:italic;
+}
+
+/* Date markers */
+span.date, span.lessondate {
+	background-color:#e05031;
+	font-size:110%;
+	font-weight:bold;
+	color:white;
+	padding:2px;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+}
+
+span.lessondate {
+/*	background-color:#2030B0; */
+}
+
+span.hwduedate {
+	font-size:80%;
+}
+
+/* General headings */
+span.announcetitle, span.hwtitle, span.lessontitle, span.infopagetitle {
+	font-weight:bold;
+	font-size:110%;
+	color:#e05031;
+        padding-bottom:7px;
+}
+
+span.announcetitle, span.lessontitle, span.infopagetitle {
+	display:block;
+}
+
+span.lessontitle {
+/*	color:#2030B0; */
+}
+
+td.chead {
+	text-align:right;
+	vertical-align:top;
+	padding:10px 10px 20px 0px;
+}
+
+td.cbody {
+	vertical-align:top;
+	padding:10px 0px 20px 0px;
+}
+
+p {
+	margin-top:0px;
+	margin-bottom:9px;
+}
+
+
+table.calendar {
+	border-collapse:collapse;
+}
+
+th.calendar {
+	padding-top:3px;
+	padding-bottom:5px;
+	background-color:#e05031;
+	border-style:none solid none solid;
+	border-color:#e05031;
+	border-width:2pt;
+	color:white;
+}
+
+td.calendar {
+	height:80px;
+	width:140px;
+	border:2pt solid #ddd;
+	vertical-align:top;
+	padding:5px 3px;
+}
+
+div.calwrap {
+	position:relative;
+	left:0px;
+	top:0px;
+	height:80px;
+	width:134px;
+}
+
+.calcont, .calspecial {
+	position:absolute;
+	left:4px;
+	top:32px;
+	height:80px;
+	width:130px;
+	text-align:center;
+}
+
+.calcont {
+	color:#444;
+}
+
+
+/* Calendar date markers */
+span.caldate {
+	background-color:#ddd;		/* f07051 */
+	color:#666;
+	padding:2px;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	position:relative;
+	left:-5px;
+	top:-5px;
+}
+
+span.hwindent {
+	display:block;
+	margin-left:40px;
+}
+
+ul.invisible {
+	list-style-type:none;
+}
